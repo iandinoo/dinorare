@@ -38,10 +38,10 @@ FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "ʜᴇʟʟᴏ {first}</b>\n\n<b>ᴀɴᴅᴀ ʜᴀʀᴜs ᴍᴇɴᴇᴋᴀɴ ʟɪɴᴋ ᴋᴏɴᴛᴇɴ ᴅᴀʀɪ ᴄʜᴀɴɴᴇʟ ᴛᴇʀsᴇʙᴜᴛ ᴜɴᴛᴜᴋ ᴍᴇᴍɢᴀᴋsᴇs ᴋᴏɴᴛᴇɴ.")
+START_MSG = os.environ.get("START_MESSAGE", "ʜᴇʟʟᴏ {first}</b>\n\n<b>ᴀɴᴅᴀ ʜᴀʀᴜs ᴍᴇɴᴇᴋᴀɴ ʟɪɴᴋ ᴋᴏɴᴛᴇɴ ᴅᴀʀɪ ᴄʜᴀɴɴᴇʟ ᴛᴇʀsᴇʙᴜᴛ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴋsᴇs ᴋᴏɴᴛᴇɴ.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1494610306").split()):
+    for x in (os.environ.get("ADMINS", "1494610306 1846991467 5015444972").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -59,7 +59,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
+USER_REPLY_TEXT = "❌ᴋᴀᴍᴜ ʙᴜᴋᴀɴ ᴀᴅᴍɪɴ ʙɪᴛᴄʜ"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1494610306)
